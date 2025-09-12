@@ -1,0 +1,20 @@
+1장 주피터 노트북 사용법
+	- Shift + Enter
+	- esc + (b, a, m)
+
+2장 자료형과 연산자
+	1절 : 변수
+		선언 X, 할당과 동시에 타입 정해짐
+		문자, _, 숫자만 사용 가능, 문자로 시작
+		예약어 (e.g. for) tkdyd qnfrk
+		다중 변수 할당 가능 (일괄 할당)
+	2절 화면 i/o
+		input( ) : 사용자로부터 str (문자열) 입력
+		print(출력 내용, sep = "구분자", end="종결어구") **sep, end 생략 가능**
+	3절 기본자료형
+		숫자 : int, float, complex (i 대신 j)
+			int/int ==> 실수 
+			지수형 표현 (e.g. 1.12e-20) ==> 실수
+		문자 : +, * 연산
+			정규표현식: re.findall(), re.search() 
+	
