@@ -12,4 +12,9 @@ ch 06 모듈과 패키지
 	    from A.B import C as D	- A안의 B 모듈 안의 C 함수를 D이름으로 가져옴
 
 2. 패키지: __init_-.py 를 포함한 모듈
-3절 패키지 설치 및 삭제
+
+
+3. 패키지 설치 및 삭제
+	 패키지 설치 : pip install 패키지명 [==버전] / conda install 패키지명 [==버전]
+	패키지 확인 : pip show 패키지명 / conda list 패키지명
+	패키지 삭제 : pip uninstall 패키지명 / conda remove 패키지명
