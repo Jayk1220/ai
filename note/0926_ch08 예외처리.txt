@@ -1,0 +1,8 @@
+Ch08
+
+	try: 
+	    예외가 발생할수도 있는 명령
+	except 예외타입 as e :
+	    print(e)
+	finally:
+	    예외 발생 여부와 상관없는 마무리 명령

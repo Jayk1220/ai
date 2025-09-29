@@ -1,0 +1,6 @@
+Hello
+Python
+
+주피터노트북 txt파일 저장은 utf-8로 저장
+
+믜믜 볅
