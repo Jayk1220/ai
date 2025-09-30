@@ -1,2 +1,65 @@
-Ch09 파일 i/o 프로그래밍
+1. *.csv
+name,age
+'홍길동',30
+'김길동',20
+
+2. *.json (open API 결과)
+[{'name':'홍길동','age':30},
+ {'name':'김길동','age':20}]
+
+3. *.xml (open API 결과)
+<person>
+	<name>홍길동</name>
+	<age>30</age>
+</person>
+<person>
+	<name>김길동</name>
+	<age>20</age>
+</person>
+
+4. *.xlsx : 엑셀파일
+
+5. *.txt : 히스토리
+
+
+
+ch09. 파일 i/o
+
+1. txt 파일 io
+	with open ('filepath(상대경로 or 절대경로)/파일명', 'w | r | a', encoding ) as f: 
+		list변수 = f.readlines()  / 문자변수 = f.read()
+		f.write(저장할 내용) / f.writelines(list변수)
+
+2.  피클 (pkl, pickle, data) io
+	with open ('filepath', 'wb | rb') as f
+		객체리스트 변수 = pickle.load(f) - in(read)
+		pickle,dump (객체리스트 변수,f) - out(write)
+
+3. CSV 파일 io
+	with open ('filepath' ,'r | w | a', encoding) as f: # 기본인코딩 cp040
+		reader = csv.reader(f) - csv 파일을 list data로 read
+		writer = csv.writer(f)
+		 ==> writer.writerows(list데이터) - list 데이터를 csv로
+		 
+		dic_reader = csv.DictReader(f) - 딕셔너리데이터로 
+		dic_writer = csv.DicWriter(f)
+		==> dic_writer.writeheader():
+		      dic_writer.writerows(list)
+
+4. json 파일 io
+	with open ('filepath', 'r | w | a', encoding) as f:
+		리스트변수 = json.load(f) - 딕셔너리로 읽기
+		객체리스트변수 = json.load(f, object_hook = 함수명)
+			함수명: 딕셔너리를 객체로 return
+
+	json,dump (리스트변수, f, ensure_ascii, indent)
+	json.dump (객체리스트, f, default = 클래스명.함수명)
+		함수명: 객체를 딕셔너리로 return
+		
+
+
+
+
+
+
 
