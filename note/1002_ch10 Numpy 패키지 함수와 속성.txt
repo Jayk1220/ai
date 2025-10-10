@@ -24,4 +24,28 @@ Numpy 패키지의 함수와 속성
 		reshape() : -1 사용하면 자동계산
 		resize() : -1 사용 불가
 		T OR transpose() : 전치행렬
-		ravel(), flatten(): N차원을 1차원으로 변경
+		ravel(), flatten(): N차원을 1차원으로 변경'
+	- 배열 연산
+		요소별 연산, 행렬곱(@,dot,, 단위행렬: np.eye), 집계함수 (sum, min, max mean, var, std)
+		범용함수 (np.add, np.multiply,....), 브로드케스팅
+
+	-배열 합치기
+		np. vstack(tuple)
+		np.hstack(tuple)
+		np.dstack(tuple) : 열끼리 합침
+
+		np.column_stack(tuple): 1차원 배열을 열단위로 2차원 배열로 합침
+		row_stack(tuple): 행 단위로 합침
+		stack(tuple,axis)
+		r_[a,b,c] row 단위로 쌓음 ( 한 행으로 합치기)
+		c_[a,b,c] column으로쌓아서 합침 (1차원을 2차원으로)
+		1차원 배열 [;,np.newaxis] == 1차원 배열.reshape(-1,1) == np.expand_dims(a,axis=1)
+			 1차원 배열을 2차원 열백터로
+
+	- 배열 분리하기
+		vsplit(ary,indices_or_sections): 첫번째 축 따라 분할
+		hsplit(ary,indices_or_sections): 두번째 축 따라 분할
+		dsplit(ary, indices_or_sections): 3차원 이상에서 3번째 차원을 나눔
+
+		split(ary, indices_or_sections, axis =?) 
+		array_split(ary, indices_or_sections, axis =?)  나눠지지 않은 정수로도 split 가능
