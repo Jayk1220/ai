@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style> /*위부터 아래로 차례차례 적용*/
+ *{/*전체선택자 = > 페이지 초기화용 : 전체 페이지의 디자인 초기화*/
+   margin: 0;
+   padding: 0;
+   color: saddlebrown;
+ }
+ header, nav, section, footer{
+     border: 1px solid gray;
+     width: 500px;
+     margin: 2px auto;
+ }
+ /* ul li 메뉴를 수평으로*/
+ nav ul{overflow:hidden;} /*수평으로 하고픈 태그의 부모단*/
+        nav ul li {
+            float: left;
+            list-style: none;
+            width: 125px;
+            text-align: center; /*글씨 가운데로*/
+            /*     margin: 1px 25px;*/
+        }
+/*header, footer{border: 1px solid gray;}
+ h1{
+     border: 1px dashed red; margin: 2px; 밖여백 상우하좌
+ }
+ li, p{
+     color: red; 글자색
+     Background-color: pink; 바탕색
+     font-weight: bold; 글자 굵게
+ }*/
+section{
+    clear: both; /*float 속성을 clear. overflow:hidden을 했으면 생략 가능*/
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>OO주식회사</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>회사소개</li><li>서비스소개</li><li>고객센터</li><li>공지사항</li>
+        </ul>
+    </nav>
+    <section>
+        <p>
+           CSS 선택자란, 웹페이지의 특정 부분을 선택하여 태그의 속성을 변경하는 목적으로 이용 
+
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+        </p>
+    </section>
+
+    <footer>
+        <p>서울시 XX구 XX동 OO빌딩 xF</p>
+    </footer>
+</body>
+</html>
