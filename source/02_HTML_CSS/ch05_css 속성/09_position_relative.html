@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #yellow{
+            background-color: yellow;
+            width: 300px; height: 300px;
+            margin: 0 auto;
+            position: relative;
+            top:5px;
+        }
+        #yellow > div {
+            width: 100px; height: 100px;
+        }
+        #green{
+            background-color: green;
+            position: absolute;
+            top: 100px; left:100px;
+            z-index: 11; /*z인덱스가 높은 값이 위로 */
+        }
+
+        #red{
+            background-color: red;
+            position: absolute;
+            top: 150px; left: 150px;
+            z-index: 10; /*z인덱스가 낮은값은 아래로*/
+        }
+    </style>
+</head>
+<body>
+    <div id="yellow">
+        yellow
+        <div id="green">green</div>
+        <div id="red">red</div>
+    </div>
+</body>
+</html>
