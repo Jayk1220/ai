@@ -1,0 +1,8 @@
+/*.content 화면용*/
+#wrap .content{
+    background-color: white;
+    color: darkgreen;
+    padding: 10px;
+    text-align: justify;
+    font-size: 1.5em;
+}

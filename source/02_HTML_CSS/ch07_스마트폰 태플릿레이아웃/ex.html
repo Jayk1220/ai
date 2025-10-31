@@ -1,27 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0"/>
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0" />
+  <title></title>
+  <link href="ex.css" rel="stylesheet">
+
 </head>
-<style>
-    header, footer{background-color: #ea8f00;}
-</style>
 <body>
-    <input type="checkbox" id="toggle">
-    <header>
-        <div id="logo_wrap">
-            <label for="toggle">
-                <img src="ch07/menu.png" class="menu" alt="메뉴">
-            </label>
-            <a href="" class="logo">Mobile Logo</a>
-            <img src="ch07/myinfo.png" class="myinfo">
+  <input type="checkbox" id="toggle">
+  <header>
+    <div id="logo_wrap">
+      <label for="toggle">
+        <img src="ch07/menu.png" class="menu" alt="메뉴">
+      </label>
+      <a href="" class="logo">mobile logo</a>
+      <img src="ch07/myinfo.png" class="myinfo">
+    </div>
+    <div id="search">
+      <form>
+        <input type="text" name="query_word">
+        <input type="submit" value="">
+      </form>
+    </div>
+  </header>
+  <div id="lnb">
+    <ul>
+      <li><a href="#1">lnb1</a></li>
+      <li><a href="#2">lnb2</a></li>
+      <li><a href="#3">lnb3</a></li>
+      <li><a href="#4">lnb4</a></li>
+      <li><a href="#5">lnb5</a></li>
+      <li><a href="#6">lnb6</a></li>
+    </ul>
+  </div>
+  <section>
+    <div id="section1">
+      <div class="row1">
+        <div>
+          <a href="https://n.news.naver.com/article/138/0002208276?cds=news_media_pc&type=editn">
+            <img src="https://imgnews.pstatic.net/image/138/2025/10/31/0002208276_001_20251031092306470.jpeg?type=w860" alt="1행1열기사">
+          </a>
         </div>
-        <div id="search"></div>
-    </header>
-    <div id="lnb"></div>
-    <section></section>
-    <footer></footer>
+        <div>
+          <a href="https://n.news.naver.com/article/296/0000094209?cds=news_media_pc&type=editn">
+            <img src="https://imgnews.pstatic.net/image/296/2025/10/29/0000094209_001_20251029183211690.jpg?type=w860" alt="1행2열 기사">
+          </a>
+        </div>
+      </div>
+      <div class="row2">
+        <div>
+          <a href="https://n.news.naver.com/article/296/0000094209?cds=news_media_pc&type=editn">
+            <img src="https://imgnews.pstatic.net/image/296/2025/10/29/0000094209_001_20251029183211690.jpg?type=w860" alt="1행2열 기사">
+          </a>
+        </div>
+        <div>
+          <a href="https://n.news.naver.com/article/138/0002208276?cds=news_media_pc&type=editn">
+            <img src="https://imgnews.pstatic.net/image/138/2025/10/31/0002208276_001_20251031092306470.jpeg?type=w860" alt="1행1열기사">
+          </a>
+        </div>
+      </div>
+      <div class="row3">
+        <div>
+          <a href="https://n.news.naver.com/article/138/0002208276?cds=news_media_pc&type=editn">
+            <img src="https://imgnews.pstatic.net/image/138/2025/10/31/0002208276_001_20251031092306470.jpeg?type=w860" alt="1행1열기사">
+          </a>
+        </div>
+        <div>
+          <a href="https://n.news.naver.com/article/296/0000094209?cds=news_media_pc&type=editn">
+            <img src="https://imgnews.pstatic.net/image/296/2025/10/29/0000094209_001_20251029183211690.jpg?type=w860" alt="1행2열 기사">
+          </a>
+        </div>
+      </div>
+    </div><!-- #section1끝 -->
+    <div id="section2">
+      <ul>
+        <li>
+          <a href="기사 URL">
+            가을 단풍 명소 고민?...'면역력' 높이는 힐링 코스 4곳 추천. 그냥 길게 말 줄임
+          </a>
+        </li>
+        <li>
+          <a href="https://www.ytn.co.kr/_cs/_ln_0134_202510310814138027_005.html">
+            "우리가 안한 말이 왜" 日 곤혹...전문가, 한국 협상도 "상당히 불안" [굿모닝경제]
+          </a>
+        </li>
+        <li>
+          <a href="https://biz.heraldcorp.com/article/10605388">
+            “사상 최초 1조원 돌파” 업계도 깜짝…전 세계에서 돈 싸들고 몰린다
+          </a>
+        </li>
+        <li>
+          <a href="https://n.news.naver.com/article/016/0002550403">
+            “中 시진핑, 日 총리 만날 때 표정 봐라” 정상회담 전망 속 놀라운 ‘관전 포인트’
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="section3">
+      <ul>
+        <li>
+          <p class="img">
+            <img src="ch07/100img.png">
+          </p>
+          <p class="txt">
+            <span>첫번째 span은 말줄임 할 예정. block타입으로 전환하여야 말줄임 적용</span>
+            <span>첫번째 span은 말줄임 안 할 예정. inline 속성 그대로</span>
+          </p>
+        </li>
+        <li>
+          <p class="img">
+            <img src="ch07/100img.png">
+          </p>
+          <p class="txt">
+            <span>첫번째 span은 말줄임 할 예정. block타입으로 전환하여야 말줄임 적용</span>
+            <span>첫번째 span은 말줄임 안 할 예정. inline 속성 그대로</span>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <footer>
+    <p> <img src="ch07/logo.png" alt="회사 로고"></p>
+    <p> 서울특별시 XX구 XX동 XX빌딩</p>
+  </footer>
 </body>
 </html>

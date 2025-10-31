@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /***페이지 초기화***/
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{
+    text-decoration: none; color: black;
+    display: block; font-weight: bold; font-size: 1.2em;
+}
+
+        /*** 공통부분 ***/
+#wrap{
+    border: 1px solid gray;
+    box-sizing: border-box;
+    text-align: justify;
+
+}
+#header{
+    height: 100px; line-height: 100px; text-align: center;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+#nav ul{overflow: hidden;}
+#nav ul li{
+    float: left;
+    line-height: 60px;
+    text-align: center;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+        /**** pc용 (min-device-width: 1201px) ****/
+@media screen and (min-width: 1201px){
+    #wrap{
+        width: 800px; margin:3px auto;
+    }
+    #nav ul li{width:20%;}
+}
+
+        /**** 태블릿용 (min-device-width: 900px, max-device-width: 1200px) ****/
+@media screen and (min-width: 900px) and (max-width:1200px) {
+    #wrap{
+        width: 99%; background-color: lightgreen;
+        margin: 0.5%;
+        font-size: 1.2em;
+    }
+    #nav ul li{width:25%;}
+    #nav ul li:nth-child(4){display: none;}
+}
+        /**** 스마트폰용(max-device-width: 899px) ****/
+@media screen and (max-width: 899px){
+    #wrap {
+        width: 100%; background-color: lightpink;
+        font-size: 1.5em;
+    }
+    #nav ul li{width:33.33%;}
+    #nav ul li:nth-child(2n){display: none;}
+
+}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header"><h1>반응형웹</h1></div>
+        <div id="nav">
+            <ul>
+                <li><a href="">menu1</a></li>
+                <li><a href="">menu2</a></li>
+                <li><a href="">menu3</a></li>
+                <li><a href="">menu4</a></li>
+                <li><a href="">menu5</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <h2>What is Lorem Ipsum?</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, esse laborum magnam incidunt mollitia quia dolores repellat minima quidem. Corrupti tempora recusandae praesentium beatae, eligendi molestias? Tempore, repellendus fuga nesciunt animi mollitia itaque aperiam ipsum, facilis ea blanditiis reprehenderit dolorum alias, deserunt minus rem molestias? Quibusdam architecto, hic quo ut nemo amet minus eligendi ipsam quas dolores, qui beatae laboriosam ratione sed explicabo eveniet earum saepe fugit veritatis vel accusantium non! Architecto est deleniti adipisci fugiat harum, eum esse officia quae labore cum natus, amet eos voluptatem ad laborum? Quae quibusdam aperiam ratione modi fugit. Magni minima tempora numquam eveniet voluptate ab suscipit saepe provident voluptas ad, assumenda quisquam placeat adipisci dolore doloremque aliquid iste illo atque quos necessitatibus nobis quia corporis mollitia perspiciatis? Consequatur eius veniam quas ad deleniti, necessitatibus quam nostrum laboriosam vel harum commodi quod voluptate architecto ducimus minus voluptatem nam! Nesciunt vero alias accusantium amet architecto, aspernatur repellat, quod nemo magnam at possimus? Impedit, dolores aperiam deleniti beatae, magni hic nobis inventore provident earum ad nostrum minima odio natus assumenda! Quod voluptate cum, repellat quibusdam labore possimus. Est nostrum aspernatur dicta dignissimos reiciendis sed voluptas, ut iusto quo ex odio dolore quaerat cum, minima dolorum unde!
+            </p>
+        </div>
+
+        <div id="footer">홍길동 주식회사</div>
+    </div>
+</body>
+</html>
