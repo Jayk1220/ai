@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        su = parseInt(prompt('반드시 숫자를 입력하세요'));
+        //switch안에 올 수 있는 값은 수, 문자, boolean모두 가능
+        switch(su%2){
+            case 0: document.writeln('짝수'); break;
+            case 1:
+            case -1: document.writeln('홀수');break;
+            default: document.writeln('수를입력하라니까');
+        }
+
+        // if (su%2 ==1 | su%==-1){
+        //     document.writeln('홀수');
+        // }else if (su%2==0){
+        //     document.writeln('짝수');
+        // }else{
+        //     document.writeln('수를 입력하라니까');
+        // }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

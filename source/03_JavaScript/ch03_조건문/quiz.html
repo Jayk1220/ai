@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>p{text-align: center;}</style>
+    <script>function chk(){
+        //수를 입력했는지
+        var su1 = Number(frm.su1.value)
+        var su2 = Number(frm.su2.value)
+        if(!frm.su1.value){
+            alert('첫번쨰 수를 입력하세요');
+            frm.su1.focus();
+            return false;
+        } else if (!frm.su2.value){
+            alert('두번째 수를 입력하세요');
+            frm.su2.focus();
+            return false;
+        }
+        
+
+        //몇번째 수가 얼마나 더 큰지 document.body.innerHTML에 추가
+        if (su1>su2){
+            msg = '두번째 수가' + (su1-su2) + '만큼크다';
+        } else if(su1==su2){
+            msg='동일';
+        } else {
+            msg = '첫번쨰 수가' + (su2-su1) + '만큼 크다';
+        }
+
+
+        //alert 메시지도 띄움
+        alert(msg);
+        document.body.innerHTML += '<p>' + msg + '</p>';
+        return false;
+    }
+    
+    </script>
+</head>
+<body>
+    <form name="frm" onsubmit="return chk()">
+        <fieldset>
+            <p>첫번째 수 : <input type="number"name="su1"></p>
+            <p>두번째 수 : <input type="number"name="su2"></p>
+            <p><input type="submit" value="결과"></p>
+        </fieldset>
+    </form>
+</body>
+</html>
