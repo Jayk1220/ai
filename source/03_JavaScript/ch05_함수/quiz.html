@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(ch05_img/img03.png);
+            background-size: 100%;
+            color: white;
+            font-size: 40px;
+        }
+
+    </style>
+    <script>
+        //img01.png 노란글씨 img02.png 파란 글씨 img03.png 하얀글씨
+
+        let sec = 0;//몇 초 지났는지를 저장하는 변수
+        let img =['url(ch05_img/img03.png)','url(ch05_img/img01.png)','url(ch05_img/img02.png)'];
+        let color = ['white','yellow','blue'];
+        document.writeln(new Date().toLocaleString()+'<br>')
+        document.writeln(sec, '초 지남')
+
+            
+        // documnent.body.innerHTML += '몇 초 지남';
+        // document.body.style = 'background:' +img[sec%img.length];
+        //document.body.style.backgroundImage = img[sec%img.length];
+        //글자색 바꾸기
+        //document.body.style.color = color[sec%img.length];
+        //타이머 구동 : sec 증가, 백그라운드 이미지 수정, 글자색 수정, 시간과 몇초 지났는지 출력
+        let timer = setInterval(()=>{
+            sec++;
+            document.body.style.backgroundImage = img[sec%img.length];
+            document.body.style.color = color[sec%img.length];
+            
+            document.body.innerHTML = new Date().toLocaleString() + '<br>' +`${sec}초 지남<br>`;
+            
+        },1000);
+
+        //10초 후 타이머 중지
+        setTimeout(()=>clearInterval(timer),10000);
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

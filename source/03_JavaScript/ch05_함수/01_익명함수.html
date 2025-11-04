@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let i = 20;
+        document.writeln('i=' +i);
+        //        functionVar(10); 익명함수는 정의 전에 사용 불가
+        let functionVar = function(a,b){ //익명함수 정의. 호출은 변수명을 통해 호출
+            alert('함수표현식 a = ' +a); 
+        };
+
+        functionVar(20,10); //함수표현식 함수 호출
+        //ECMAScript 6문법의 화살표 함수 표기법
+        functionVar = (a,b) => {
+            alert(`화살표 함수 a = ${a}, b=${b}`);
+        };
+        functionVar(10,20);  //화살표 함수 호출
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

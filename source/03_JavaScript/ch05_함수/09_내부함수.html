@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> //A가 만든 부분 : 직각삼각형의 빗변을 구하는 함수
+    //내부함수 : 함수 내의 함수(함수 내에서만 사용)
+    //내부 함수 사용 이유 : 충돌을 피하고자
+    function square(x){
+        return x*x;
+    }
+//    let square = x => x*x;
+    function pythagorian(width,height){
+        return Math.sqrt(square(width)+square(height));
+    }
+    </script>
+    <script> //b가 만든 부분 : 직각삼각형인지 여부를 판단하는 함수
+    function square(width, height, hypothenuse){
+        return (width*width + height*height == hypothenuse*hypothenuse)
+        // if (width*width + height*height == hypothenuse*hypothenuse){
+        //     return true;
+        // }else{
+        //     return fals
+        // }
+    }
+    </script>
+</head>
+<body>
+    <script>
+        document.writeln('빗변의 길이는' + pythagorian(3,4)+'<br>');
+//        alert('빗변의 길이는' + pythagorian(3,4));
+        document.writeln('직각삼각형 여부: ', square(3,4,5));
+    </script>
+</body>
+</html>
