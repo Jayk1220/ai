@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //생성자함수
+        function Student(name, kor, mat, eng, sci) {
+            this.name = name;
+            this.kor = kor;
+            this.mat = mat;
+            this.eng = eng;
+            this.sci = sci;
+        }//생성자함수
+
+        Student.prototype.getSum = function(){ return this.kor + this.mat + this.eng + this.sci;};
+        Student.prototype.getAvg = function(){return this.getSum() / 4;};
+        Student.prototype.toString = function(){
+                let output = '';
+                for (let key in this){
+                    if(key!='getSum' && key != 'getAvg' && key!='toString'){
+                        output += key + ':' + this[key] + '&nbsp;';
+                    }else if (key =='getSum' || key=='getAvg'){
+                        output += key.substring(3).toUpperCase() + ':' + this[key]()+'&nbsp;';
+                    }//if
+                }//for
+                return output;
+            };//toString
+        let students = [];
+        students.push(new Student('홍',75,84,36,73));
+        students.push(new Student('김',96,58,78,69));
+        students.push(new Student('박',59,87,98,67));
+        students.push(new Student('정',96,98,69,79));
+        students.push(new Student('이',97,79,86,96));
+        
+        students.forEach( data => document.writeln(data + '<br>'));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

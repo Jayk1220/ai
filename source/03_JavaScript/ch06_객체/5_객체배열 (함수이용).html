@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> //객체를 반환하는  함수
+    function makeStudent(name, kor, mat, eng, sci){
+        let resultObj = {
+            'name':name,
+            'kor':kor,
+            'mat':mat,
+            'eng':eng,
+            'sci':sci,
+            'getSum':function(){
+                return this.kor + this.mat + this.eng + this.sci;
+            },
+            'getAvg':function(){
+                return this.getSum() / 4;
+            },
+            'toString' : function(){
+                let output = '';
+                for (let key in this){
+                    if(key!='getSum' && key != 'getAvg' && key!='toString'){
+                        output += key + ':' + this[key] + '&nbsp;';
+                    }else if (key =='getSum' || key=='getAvg'){
+                        output += key.substring(3).toUpperCase() + ':' + this[key]()+'&nbsp;';
+                    }//if
+                }//for
+                return output;                
+            },//toString
+        } //resultObj 객체
+        return resultObj;
+    }
+    let students = [makeStudent('홍길동',99,90,85,89)];
+    students.push(makeStudent('김길동',80,45,59,59));
+    students.push(makeStudent('신길동',67,97,96,82));
+    students.push(makeStudent('박길동',87,57,50,17));
+    students.push(makeStudent('마길동',45,59,63,85));
+
+    students.forEach( 
+        (data,idx) => document.writeln(`${idx}번째 : ${data}<br>`));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
