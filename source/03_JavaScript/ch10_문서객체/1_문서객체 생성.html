@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEX</title>
+    <script>
+        window.onload = () => {
+            //방법1. h1태그 생성 ==> textNode 생성 ==>
+            // textNode를 h1에 연결 ==> body에 h1 연결
+            var h1 = document.createElement('h1');
+            var textNode = document.createTextNode('추가한 h1 태그 안의 Text');
+            h1.appendChild(textNode);
+            document.body.appendChild(h1);
+
+            //방법2. img 태그 생성 ==> src 속성변경 ==> img를  body에 연결
+            var img = document.createElement('img');
+            img.setAttribute('src','ch10_img/red.jpg');
+            document.body.appendChild(img);
+
+            //방법3 innerHTML 이용
+            document.body.innerHTML += '<h1> 방법 3으로 추가 </h1>'
+        };
+    </script>
+</head>
+<body>
+    <h1>TEXT NODE</h1>
+    <img src="ch10_img/orange.jpg" alt="오렌지" />
+
+</body>
+</html>

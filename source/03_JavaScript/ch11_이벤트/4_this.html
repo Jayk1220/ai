@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = () => {
+            var header = document.getElementsByClassName('header');
+            for (var idx in header){
+                header[idx].onclick = function(){
+                    //this : 이벤트가 발생된 컴포넌트
+                    this.innerHTML = 'click 했네';
+                    this.style.color = 'red';
+                };
+            }
+        };
+
+    </script>
+</head>
+<body>
+    <h1 class = 'header'> click 1</h1>
+    <h1 class = 'header'> click 2</h1>
+    <h1 class = 'header'> click 3</h1>
+    <h1 class = 'header'> click 4</h1>
+    <h1 class = 'header'> click 5</h1>
+</body>
+</html>
