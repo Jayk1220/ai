@@ -3,3 +3,5 @@ download/
 IDE/
 lecNote/
 donotupload.txt
+.venv/
+.idea/
