@@ -1,0 +1,70 @@
+NVidia 그래픽카드가 있을 경우
+ 2000번대 이상일 경우(그 이하는 Google Colab이 더 빠르나 유료)
+ https://www.tensorflow.org/install/pip?hl=ko#windows-native에 소프트웨어 요구사항 있음
+
+1. 그래픽카드 드라이버 설치(아마도 설치되어 있을 것임)
+https://www.tensorflow.org/install/gpu?hl=ko
+
+2. CUDA Toolkit 다운로드 후 설치 - 11.2버전
+https://developer.nvidia.com/cuda-toolkit-archive (cuda_11.2.0_460.89_win10.exe)
+
+3. NVIDIA의 cuDNN 라이브러리(SDK) 다운로드 후 압출풀기 - 8.1버전
+https://developer.nvidia.com/rdp/cudnn-archive (nvidia 아이디 필요. cudnn-11.2-windows-x64-v8.1.1.33.zip 강사배포)
+ => bin, include, lib 폴더의 내용을 CUDA Toolkit 설치 경로의 동일한 폴더에 덮어쓰기
+	(예: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2).
+
+4. 아나콘다 설치 
+https://repo.anaconda.com/archive/에서 아나콘다 다운로드 및 설치
+GPU를 사용하려면, Anaconda3-2023.03-1-Windows-x86_64.exe
+ (파이썬 개발 인터프리터, 주피터노트북 개발환경, 머신러닝 및 딥러닝을 위한 일부 패키지가 설치됨)
+
+윈도우즈11에서 pip install tensorflow를 이용했다면
+(TensorFlow 2.x에 맞는 CUDA Toolkit 및 cuDNN 버전 예시)
+TensorFlow 2.13.x:
+	CUDA Toolkit: 11.8
+	cuDNN: 8.6
+
+TensorFlow 2.12.x:
+	CUDA Toolkit: 11.8
+	cuDNN: 8.6
+
+TensorFlow 2.11.x:
+	CUDA Toolkit: 11.2
+	cuDNN: 8.1
+
+TensorFlow 2.10.x:
+	CUDA Toolkit: 11.2
+	cuDNN: 8.1
+
+NVIDIA의 CUDA Toolkit 아카이브에서 적합한 버전을 다운로드하고 설치합니다.
+설치 시, 설치 경로를 기록해 두는 것이 좋습니다.
+
+
+you already have a newer version of the NVIDA framework SDK installed라는 메세지가 나오면 NVIDIA FrameView SDK를 uninstall
+
+
+5. table of contents 쓰기 위해, 터미널에서
+conda install -c conda-forge jupyter_nbextensions_configurator
+
+pip install jupyter_nbextensions_configurator jupyter_contrib_nbextensions
+jupyter contrib nbextension install --user
+jupyter nbextensions_configurator enable --user
+
+jupyter contrib nbextension install --sys-prefix
+conda install nbclassic=0.4.8
+
+Edit > nbextensions config 에서.. (또는 http://localhost:8888/nbextensions) - 1번만 해. 괜히 느려져
+1. Table on Contents(2) : 마크다운 해더 수준에 따른 목차 생성 
+	-> Automatically number notebook's sections 옵션을 해제
+2. Variabel Inspector: 현재 변수와 변수값(변수들을 트래킹하는 익스텐션)
+3. Execute Time : 셀이 돌아가는 시간 측정
+
+
+4. Code prettify : 코드를 예쁘게 정리. 불필요한 여백을 없애거나 공간 띄움
+5. Autopep8 : 자동 코드 정리기능(코드가 지저분한 경우, 망치모양 버튼을 클릭하면 PEP 8 스타일 가이드에 맞게 코드를 자동으로 정리)
+6. CodeFolding : 긴코드를 접을 수 있게 해줘서 함수나 반복문, 조건문 등에서 코드를 접어 놓을 수 있어 관리가 편함
+
+
+코드 파일 열어보면 자판 모양 아이콘 옆에 Table of Contents 있음
+
+
