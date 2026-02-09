@@ -1,0 +1,77 @@
+[33m4a8098a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m final
+[33m5506132[m final
+[33mb6b8774[m django
+[33m537b6ea[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m django
+[33m7dcd4c1[m django
+[33mec5b9f2[m RAG retrieval
+[33m0ce28ac[m RAG 성능향상
+[33m45d8e5d[m RAG
+[33m65cecdb[m RAG
+[33mc77f8b7[m note
+[33m3ef0096[m readme
+[33ma4b7786[m todos
+[33mf4f1d9b[m readme_
+[33m517827d[m readme_
+[33m8f72bc5[m readme_
+[33m9750143[m readme
+[33m7d6e624[m flask db
+[33m2c22406[m flask error
+[33m71413be[m flask
+[33m48324c5[m 최적화
+[33m09eb382[m 머신러닝
+[33mdcdfcfe[m 머신러닝 군집분석
+[33m3347342[m chatbot
+[33m79920bb[m image, TTS
+[33medd80dd[m LangChain
+[33m785480b[m LLM Huggingface
+[33m2fe449a[m LLM
+[33m64a1dc2[m Stop tracking .env file
+[33m8a75e93[m transformers
+[33m1ddee2d[m LSTM
+[33md2732e2[m NLP 전처리
+[33mea223ad[m NLP 전처리
+[33md79f793[m NLP
+[33m6ee6769[m dl iris
+[33m70cf09e[m XOR tensorflow
+[33m5f1b086[m dl normalization
+[33mb0c09be[m deeplearning
+[33m2a60485[m database 연동
+[33md2734f3[m DBMS mySQL
+[33mf822c29[m DBMS DDL DML
+[33m1833b4e[m sql equi join
+[33m9b52c7e[m ORACLE SQL
+[33m23f7017[m Python 동적
+[33maa5bbdf[m python df
+[33m4947357[m JS ajax
+[33m39c979a[m JS 이벤트
+[33m557e1b1[m JS  객체
+[33m3c0d759[m js 객체
+[33mb3654ec[m JS  조건문 반복문
+[33mdb9bb31[m js 기본문법
+[33mfc187ee[m python mobile
+[33m712569f[m html CSS
+[33mc86dc16[m HTML 웹표준 선택자
+[33ma12dea6[m html 글자목록
+[33m952433c[m HTML beginning
+[33ma3e3978[m 상가정보분석
+[33me6568d3[m python 평가
+[33m2ae41ac[m python 예1 아파트분양가분석
+[33m3a96d63[m python dataframe
+[33m0a62270[m python 데이터프레임
+[33mf3d8713[m python pandas dataframe
+[33m26a47b1[m python matrix
+[33maa126de[m python matrix
+[33m75a726c[m python io 연습
+[33m5431bba[m python 파일 io
+[33m3969e83[m python 예외처리
+[33mc353e6f[m python 객체지향
+[33m0a394e9[m python 모듈과 패키지
+[33mc0185de[m python 람다식
+[33m89d53e7[m 'python제어문'
+[33m73ad35f[m tuple, dictionary, set 0919
+[33mc237b6a[m python 리스트
+[33mfc9052d[m 문자열, 날짜형 다루기
+[33m102d0bb[m 포맷팅과 연산자
+[33m8affcf6[m 0912 Python 자료형
+[33m5cf3e7a[m first day end
+[33me4f297c[m first commit
